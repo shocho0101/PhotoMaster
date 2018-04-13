@@ -14,6 +14,7 @@
 		CA1EDEAE207E3B8F003B92C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1EDEAC207E3B8F003B92C9 /* LaunchScreen.storyboard */; };
 		CA1EDEB9207E3B8F003B92C9 /* PhotoMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1EDEB8207E3B8F003B92C9 /* PhotoMasterTests.swift */; };
 		CA1EDEC4207E3B8F003B92C9 /* PhotoMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1EDEC3207E3B8F003B92C9 /* PhotoMasterUITests.swift */; };
+		CA1EDED2207E538C003B92C9 /* 6a878d64.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1EDED1207E538C003B92C9 /* 6a878d64.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CA1EDEBF207E3B8F003B92C9 /* PhotoMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1EDEC3207E3B8F003B92C9 /* PhotoMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMasterUITests.swift; sourceTree = "<group>"; };
 		CA1EDEC5207E3B8F003B92C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1EDED1207E538C003B92C9 /* 6a878d64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6a878d64.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				CA1EDEA3207E3B8D003B92C9 /* AppDelegate.swift */,
 				CA1EDEA5207E3B8D003B92C9 /* ViewController.swift */,
 				CA1EDEA7207E3B8E003B92C9 /* Main.storyboard */,
+				CA1EDED1207E538C003B92C9 /* 6a878d64.png */,
 				CA1EDEAA207E3B8F003B92C9 /* Assets.xcassets */,
 				CA1EDEAC207E3B8F003B92C9 /* LaunchScreen.storyboard */,
 				CA1EDEAF207E3B8F003B92C9 /* Info.plist */,
@@ -232,6 +235,7 @@
 				CA1EDEAE207E3B8F003B92C9 /* LaunchScreen.storyboard in Resources */,
 				CA1EDEAB207E3B8F003B92C9 /* Assets.xcassets in Resources */,
 				CA1EDEA9207E3B8E003B92C9 /* Main.storyboard in Resources */,
+				CA1EDED2207E538C003B92C9 /* 6a878d64.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV8VP6YGE9;
 				INFOPLIST_FILE = PhotoMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV8VP6YGE9;
 				INFOPLIST_FILE = PhotoMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

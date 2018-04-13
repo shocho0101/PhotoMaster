@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,76 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lu5-3H-pQ7">
+                                <rect key="frame" x="0.0" y="80" width="375" height="527"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKE-yX-f6V">
+                                <rect key="frame" x="20" y="40" width="46" height="30"/>
+                                <state key="normal" title="カメラ"/>
+                                <connections>
+                                    <action selector="cameraButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="GmC-Rw-zrG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9k-89-Ccg">
+                                <rect key="frame" x="86" y="40" width="62" height="30"/>
+                                <state key="normal" title="アルバム"/>
+                                <connections>
+                                    <action selector="albumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ch5-xv-qZ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcz-Wz-Cpa">
+                                <rect key="frame" x="69" y="617" width="92" height="30"/>
+                                <state key="normal" title="テキスト合成"/>
+                                <connections>
+                                    <action selector="textButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="iLl-Md-7uJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bH-nZ-lwl">
+                                <rect key="frame" x="166" y="617" width="92" height="30"/>
+                                <state key="normal" title="イラスト合成"/>
+                                <connections>
+                                    <action selector="illustButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="k0o-z1-LDQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huC-bT-Ihw">
+                                <rect key="frame" x="263" y="617" width="92" height="30"/>
+                                <state key="normal" title="アップロード"/>
+                                <connections>
+                                    <action selector="uploadButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="wAF-hL-1nv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="huC-bT-Ihw" firstAttribute="leading" secondItem="8bH-nZ-lwl" secondAttribute="trailing" constant="5" id="92p-xY-Xdm"/>
+                            <constraint firstItem="NKE-yX-f6V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BYV-wv-bYu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="huC-bT-Ihw" secondAttribute="bottom" constant="20" id="Ean-9q-Zps"/>
+                            <constraint firstItem="Lu5-3H-pQ7" firstAttribute="top" secondItem="NKE-yX-f6V" secondAttribute="bottom" constant="10" id="HtY-Mi-ScI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8bH-nZ-lwl" secondAttribute="bottom" constant="20" id="IBy-N7-ymC"/>
+                            <constraint firstItem="lcz-Wz-Cpa" firstAttribute="top" secondItem="Lu5-3H-pQ7" secondAttribute="bottom" constant="10" id="KWm-Nj-vNg"/>
+                            <constraint firstItem="8bH-nZ-lwl" firstAttribute="leading" secondItem="lcz-Wz-Cpa" secondAttribute="trailing" constant="5" id="OeF-n2-0RF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lcz-Wz-Cpa" secondAttribute="bottom" constant="20" id="WCS-jx-q0C"/>
+                            <constraint firstItem="Lu5-3H-pQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aPp-xg-Jlt"/>
+                            <constraint firstItem="c9k-89-Ccg" firstAttribute="leading" secondItem="NKE-yX-f6V" secondAttribute="trailing" constant="20" id="cS7-eA-SMm"/>
+                            <constraint firstItem="c9k-89-Ccg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eGL-Oc-wXz"/>
+                            <constraint firstItem="Lu5-3H-pQ7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="haG-cI-eKC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="huC-bT-Ihw" secondAttribute="trailing" constant="20" id="q9R-Qf-XGc"/>
+                            <constraint firstItem="NKE-yX-f6V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yRT-F7-ptA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="Lu5-3H-pQ7" id="7g1-1X-uut"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
